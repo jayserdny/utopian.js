@@ -24,5 +24,6 @@ module.exports = function(grunt) {
 	});
 	grunt.loadNpmTasks('grunt-babel');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.registerTask("default", ["babel","uglify"]);
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.registerTask('default', ['babel', 'uglify']);
 }

@@ -61,9 +61,4 @@ typings/
 # dotenv environment variables file
 .env
 
-# unit test
-test/
-
-
-
 # End of https://www.gitignore.io/api/node
