@@ -61,3 +61,25 @@ describe('Function to get a single sponsor data', function () {
                   });
       });
 });
+
+describe('Function to get posts', function () {
+      it('should return an object with an array called result which holds objects or empty array', function () {
+
+            return utopian.getPosts()
+                  .then(function(posts) {
+                        expect(posts).to.be.a('object');
+                        expect(posts.results).to.be.a('array');
+                        expect(posts.total).to.be.a('number');
+                  });
+      });
+});
+
+describe('Function to get posts count', function () {
+      it('should return a number with the count of the post', function () {
+
+            return utopian.getTotalPostCount()
+                  .then(function(count) {
+                        expect(count).to.be.a('number');
+                  });
+      });
+});
