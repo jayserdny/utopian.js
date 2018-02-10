@@ -1,3 +1,11 @@
+/**
+ * Unit test for the existing functions in the library.
+ * Some fields are testing for assertion of data type.
+ * 
+ * @author Jayser Mendez
+ * @version 0.0.1
+ */
+
 'use strict';
 var assert = chai.assert;
 var expect = chai.expect;
